@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* navabar*/
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-image: linear-gradient(90deg, #000, #000, #53C8B6);
+	background-color: transparent;
+}
+
+.logo{
+	padding: 0 5rem;
+}
+.logo .heading{
+	color: #fff;
+}
+
+.menu{
+	padding: 0 5rem;
+}
+
+.hamburger{
+	display: none;
+	color: #fff;
+	font-size: 25px;
+}
+.cross-icon{
+	display: none;
+}
+
+.menu .menu_list{
+	display: flex;
+	list-style: none;
+}
+
+.menu_list .menu_list_items{
+	padding: 0.5rem 1rem;
+}
+
+.menu_list_items .links{
+	text-decoration: none;
+	color: #fff;
+}
+
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+    .menu_list .menu_list_items {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+/* main hero*/
+.hero{
+	background-image: url('../images/img2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin: 4.8rem 0;
+}
+
+.hero .intro{
+	text-align: center;
+	margin: 0 5rem;
+	color: #fff;
+}
+
+.hero .intro_buttons{
+	margin: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.portfolio{
+	margin: 4.8rem 0;
+	padding: 0 5rem;
+}
+
+.port_card{
+	padding: 0 !important;
+	background: none !important;
+	border: 2px solid #000;
+}
+
+.port_card .image{
+	width: 100%;
+}
+
+.port_card .image img{
+	height: 200px;
+	width: 100%;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+/* Services section styles */
+.services { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+} 
+
+.my-row { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 2rem 0; 
+} 
+
+.my-row .my-col { 
+    text-align: center; 
+    width: 30%; 
+} 
+
+.my-card { 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 20px; 
+    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
+    padding: 1rem; 
+}
+
+.greet_heading{
+	font-size: 1.3rem;
+	font-weight: lighter;
+	margin: 0;
+	letter-spacing: 1px;
+}
