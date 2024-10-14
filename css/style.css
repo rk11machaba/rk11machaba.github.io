@@ -1,147 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* navabar*/
 .navbar{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-image: linear-gradient(90deg, #000, #000, #53C8B6);
-	background-color: transparent;
+    display: flex;
+    background-image: linear-gradient(90deg, #000, #000, #53C8B6);
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .logo{
-	padding: 0 5rem;
+    padding: 0 20px;
 }
+
 .logo .heading{
-	color: #fff;
+    color: #fff;
 }
 
 .menu{
-	padding: 0 5rem;
+    padding: 0 20px;
 }
 
 .hamburger{
-	display: none;
-	color: #fff;
-	font-size: 25px;
+    display: none;
+    color: #fff;
+    font-size: 25px;
 }
+
 .cross-icon{
-	display: none;
+    display: none;
 }
 
 .menu .menu_list{
-	display: flex;
-	list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .menu_list .menu_list_items{
-	padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
-.menu_list_items .links{
-	text-decoration: none;
-	color: #fff;
+.links{
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
 }
 
-@media screen and (min-width: 856px) and (max-width: 1024px) {
-    .menu_list .menu_list_items {
-        padding: 0.5rem 0.3rem;
-    }
+.links:hover{
+    border-bottom: 2px solid #fff;
 }
 
-/* main hero*/
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* home section */
 .hero{
-	background-image: url('../images/img2.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: start;
-	margin: 4.8rem 0;
+    background-image: url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 4.8rem 0;
 }
 
 .hero .intro{
-	text-align: center;
-	margin: 0 5rem;
-	color: #fff;
+    text-align: center;
+    margin: 0 5rem;
+    color: #fff;
 }
 
 .hero .intro_buttons{
-	margin: 2rem 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.portfolio{
-	margin: 4.8rem 0;
-	padding: 0 5rem;
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.port_card{
-	padding: 0 !important;
-	background: none !important;
-	border: 2px solid #000;
+.about .about_text{
+    width: 450px;
+    padding: 5rem 1rem 5rem 5rem;
 }
 
-.port_card .image{
-	width: 100%;
+.about .about_image img{
+    height: 400px;
+    width: 450px;
+    padding: 5rem 5rem 5rem 1rem;
 }
 
-.port_card .image img{
-	height: 200px;
-	width: 100%;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
+
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* Services section styles */
-.services { 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column; 
-    margin: 4.8rem 0; 
-    padding: 0 5rem; 
-} 
-
-.my-row { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    margin: 2rem 0; 
-} 
-
-.my-row .my-col { 
-    text-align: center; 
-    width: 30%; 
-} 
-
-.my-card { 
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    border-radius: 20px; 
-    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
-    padding: 1rem; 
+.contact{
+    padding: 0 5rem;
 }
 
-.greet_heading{
-	font-size: 1.3rem;
-	font-weight: lighter;
-	margin: 0;
-	letter-spacing: 1px;
+.contact_content{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+
+.form_controls{
+    width: 80%;
+    padding: 10px 0;
+    margin: 1.67rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
 }
